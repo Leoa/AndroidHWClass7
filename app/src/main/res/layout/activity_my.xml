@@ -1,77 +1,67 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context=".MyActivity"
+android:background="@drawable/background">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="98dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="left|top"
+        android:src="@drawable/distance" />
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/directions" />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MyActivity"
-    android:background="@drawable/background">
+    android:gravity="center_horizontal">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <FrameLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/turtle"
+            android:layout_gravity="left|bottom" />
 
         <ImageView
-            android:layout_width="86dp"
-            android:layout_height="98dp"
-            android:id="@+id/imageView2"
-            android:layout_gravity="left|top"
-            android:src="@drawable/distance" />
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/clock"
+            android:layout_gravity="center_horizontal|bottom" />
 
-        <ImageView
-            android:layout_width="182dp"
-            android:layout_height="44dp"
-            android:id="@+id/imageView3"
-            android:layout_gravity="center_horizontal|top"
-            android:src="@drawable/directions" />
-    </LinearLayout>
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/exclaim"
+            android:layout_gravity="right|bottom" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal">
-
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="39dp"
-                android:id="@+id/imageButton"
-                android:background="@drawable/turtle"
-                android:layout_gravity="left|bottom" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="41dp"
-                android:id="@+id/imageView"
-                android:src="@drawable/clock"
-                android:layout_gravity="center_horizontal|bottom" />
-
-            <ImageButton
-                android:layout_width="34dp"
-                android:layout_height="34dp"
-                android:id="@+id/imageButton2"
-                android:background="@drawable/exclaim"
-                android:layout_gravity="right|bottom" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="This is a medium text"
-                android:id="@+id/textView"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                android:textColor="#ff080808" />
-
-        </FrameLayout>
-    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
 
 </LinearLayout>
