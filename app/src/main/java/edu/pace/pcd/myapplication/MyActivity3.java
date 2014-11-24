@@ -6,38 +6,43 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
 
 public class MyActivity3 extends Activity {
 
+    private ImageButton imageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_activity3);
     }
 
+
     public void secondActivityClick(View v)
     {
+
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        imageButton.setVisibility(View.VISIBLE);
+//        imageButton.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View arg0) {
+//                imageButton.setVisibility(View.VISIBLE);
+//                Toast.makeText(MyActivity2.this,
+//                        "ImageButton is clicked!", Toast.LENGTH_SHORT).show();
+//
+//            }
+//
+//        });
         Intent intent = new Intent(this, MyActivity2.class);
-        startActivity(intent);
-    }
-
-    public void thirdActivityClick(View v)
-    {
-        Intent intent = new Intent(this, MyActivity.class);
-        startActivity(intent);
-    }
-
-    public void fourthActivityClick(View v)
-    {
-        Intent intent = new Intent(this, MyActivity4.class);
         startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my_activity3, menu);
+        getMenuInflater().inflate(R.menu.my_activity2, menu);
         return true;
     }
 
@@ -52,4 +57,5 @@ public class MyActivity3 extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
