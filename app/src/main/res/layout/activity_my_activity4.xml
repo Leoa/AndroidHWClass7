@@ -10,6 +10,7 @@
     tools:context=".MyActivity"
     android:background="@drawable/background">
 
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -29,49 +30,54 @@
             android:layout_gravity="center_horizontal|top"
             android:src="@drawable/directions" />
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="341dp"
+        android:layout_height="343dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="285dp"
+                android:layout_height="251dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/popup" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:weightSum="1">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/turtle"
+            android:layout_gravity="left|bottom" />
 
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <ImageButton
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/clock" />
 
-            <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="39dp"
-                android:id="@+id/imageButton"
-                android:background="@drawable/turtle"
-                android:layout_gravity="left|bottom" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@drawable/exclaim"
+            android:layout_weight="0.66" />
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:background="@null"
-                android:layout_height="41dp"
-                android:id="@+id/imageButton"
-                android:src="@drawable/clock"
-                android:onClick="secondActivityClick"
-                android:layout_gravity="center_horizontal|bottom" />
 
-            <ImageButton
-                android:layout_width="34dp"
-                android:layout_height="34dp"
-                android:id="@+id/imageButton2"
-                android:background="@drawable/exclaim"
-                android:layout_gravity="right|bottom" />
-
-            <ImageView
-                android:layout_width="297dp"
-                android:layout_height="261dp"
-                android:id="@+id/imageView4"
-                android:src="@drawable/popup"
-                android:visibility="invisible"
-                android:layout_gravity="center" />
-
-        </FrameLayout>
     </LinearLayout>
 
-</LinearLayout>
