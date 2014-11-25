@@ -17,10 +17,9 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="86dp"
-            android:layout_height="98dp"
+            android:layout_width="58dp"
+            android:layout_height="67dp"
             android:id="@+id/imageView2"
-            android:layout_gravity="left|top"
             android:src="@drawable/distance" />
 
         <ImageView
@@ -33,7 +32,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="341dp"
-        android:layout_height="343dp"
+        android:layout_height="268dp"
         android:gravity="center_horizontal">
 
         <LinearLayout
@@ -43,8 +42,8 @@
             android:weightSum="1">
 
             <ImageView
-                android:layout_width="285dp"
-                android:layout_height="251dp"
+                android:layout_width="250dp"
+                android:layout_height="219dp"
                 android:id="@+id/imageView4"
                 android:src="@drawable/popup" />
         </LinearLayout>
@@ -66,10 +65,12 @@
             android:layout_gravity="left|bottom" />
 
         <ImageButton
-            android:layout_width="257dp"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
             android:id="@+id/imageButton2"
-            android:src="@drawable/clock" />
+            android:src="@drawable/clock"
+            android:background="#0000"
+            android:contentDescription="imahe" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -81,3 +82,4 @@
 
     </LinearLayout>
 
+</LinearLayout>

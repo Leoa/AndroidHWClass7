@@ -18,8 +18,8 @@ android:background="@drawable/fouractivitybg">
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="86dp"
-        android:layout_height="98dp"
+        android:layout_width="74dp"
+        android:layout_height="84dp"
         android:id="@+id/imageView2"
         android:layout_gravity="left|top"
         android:src="@drawable/distance" />
@@ -39,8 +39,8 @@ android:background="@drawable/fouractivitybg">
     android:gravity="center_horizontal">
 
     <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="300dp"
+        android:layout_height="250dp">
 
         <ImageButton
             android:layout_width="40dp"
@@ -66,64 +66,64 @@ android:background="@drawable/fouractivitybg">
             android:layout_gravity="right|bottom" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView"
             android:layout_gravity="left|top"
             android:src="@drawable/trafficjam" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView4"
             android:layout_gravity="center_horizontal|top"
             android:src="@drawable/police" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView5"
             android:layout_gravity="right|top"
             android:src="@drawable/accident" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView6"
             android:layout_gravity="left|center_vertical"
             android:src="@drawable/hazard" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView7"
             android:layout_gravity="center"
             android:src="@drawable/cameras" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView8"
             android:layout_gravity="right|center_vertical"
             android:src="@drawable/chitchat" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView9"
             android:layout_gravity="left|bottom"
             android:src="@drawable/police" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView10"
             android:layout_gravity="center_horizontal|bottom"
             android:src="@drawable/pave" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/imageView11"
             android:layout_gravity="right|bottom"
             android:src="@drawable/checkin" />
